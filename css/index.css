@@ -1,0 +1,230 @@
+*{margin: 0;padding: 0;}
+html{ font-family: "Microsoft YaHei"; color:#333; font-size:100px;}
+html,body{width:100%;min-width:7.5rem;height:100%;background: #f4f4f4;}
+li{ list-style:none; }
+a{ text-decoration:none; color:#333; }
+a img{ border:0; }
+img{ vertical-align:middle;}
+table{border-collapse:collapse;border-spacing:0;}
+.clearfix{ *zoom:1; }
+.clearfix:after{ content:""; display:block; clear:both; }
+.fl{float: left}
+.fr{float: right}
+input {/*-webkit-appearance:none;*/outline: none}
+.main{width: 7.5rem;margin: 0 auto}
+.zg-wrap{margin: 0 auto;width: 7.5rem;}
+header {
+    width: 7.5rem;
+    height: .8rem;
+    background: #f2f2f2;
+}
+header a {
+    font:700 .2rem/.4rem "microsoft yahei";
+    color:#fff;
+}
+header a img {
+    float: left;
+}
+header .logo {
+    display: block;
+    float: left;
+    width: 2rem;
+    height: .36rem;
+    margin-top: .2rem;
+    margin-left: .3rem;
+}
+header .zgfb {
+    display: block;
+    float: right;
+    width: 1.15rem;
+    height: .36rem;
+    margin-right: .3rem;
+    margin-top: .2rem;
+}
+header .logo img {
+    width: .75rem;
+    height: .34rem;
+    margin-right: .1rem;
+}
+header .zgfb img {
+    width: .27rem;
+    height: .24rem;
+    margin-top: .12rem;
+}
+header.fixed {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    margin-left: -3.75rem;
+    z-index: 899;
+}
+.navbar {
+    box-shadow: none;
+    background: rgba(70,70,70,0);
+}
+.navbar.active {
+    background: rgb(255,255,255);
+    transition: background 3s;
+}
+.navbar.active a {
+    color:#000;
+}
+/*footer*/
+.foot{
+    position: fixed;
+    bottom:0;
+    width:7.5rem;
+    height:.9rem;
+    overflow: hidden;
+    z-index:999;
+}
+.foot a{
+    float: left;
+    width:3.75rem;
+    font:.26rem/0.9rem 'Microsoft YaHei';
+    text-align: center;
+}
+.foot a:first-child{
+    background: #f2f2f2;
+    color: #000;
+}
+.foot a:first-child img {
+    width: .47rem;
+    height: .4rem;
+    margin-right: .1rem;
+}
+.foot a:last-child{
+    background: #dc2f3c;
+    color: #fff;
+}
+.foot a:last-child img {
+    width: .3rem;
+    height: .38rem;
+    margin-right: .1rem;
+}
+
+
+/*m_banner*/
+.mban {
+    width: 7.5rem;
+    height: 2.75rem;
+    background: url(../images/ban.jpg) no-repeat center top;
+    -webkit-background-size: 7.5rem;
+    background-size: 7.5rem;
+    position: relative;
+}
+.mban h1 {
+    float: left;
+    text-indent: -9999px;
+}
+/*zgm1*/
+.zgm1 {
+  width:7.5rem;
+  height:7.07rem;
+  background: url(../images/m1.jpg) no-repeat center top;
+  -webkit-background-size: 7.5rem;
+  background-size: 7.5rem;
+  margin-top: -1px;
+  position: relative;
+}
+.zgm1 a{
+  display: block;
+  position: absolute;
+  box-sizing: border-box;
+  /* border: 1px solid #000; */
+}
+.zgm1 a .bt{
+    font:600 .20rem/.4rem 'Microsoft YaHei';
+    text-align: center;
+    color: #fff;
+    width:1.13rem;
+    height:.4rem;
+    background: url(../images/bt.png) no-repeat center top;
+    -webkit-background-size: 1.13rem;
+    background-size: 1.13rem;
+    letter-spacing: 0.03rem;
+}
+.zgm1 a:nth-child(1){
+    left: 1.5rem;
+    top: 1rem;
+}
+.zgm1 a:nth-child(2){
+    left: 0.9rem;
+    bottom: 4rem;
+}
+.zgm1 a:nth-child(3){
+    left: 1rem;
+    bottom: 2.61rem;
+}
+.zgm1 a:nth-child(4){
+    left: 2.8rem;
+    bottom: 2.51rem;
+}
+.zgm1 a:nth-child(5){
+    right: 1.5rem;
+    bottom: 1.7rem;
+}
+.zgm1 a:nth-child(6){
+    right: 2.1rem;
+    bottom: 3.24rem;
+}
+.zgm1 a:nth-child(7){
+    right: 1.1rem;
+    top: 2.36rem;
+}
+.zgm1 a:nth-child(8){
+    right: 2.1rem;
+    top: 0.8rem;
+}
+.zgm1 .dialog{
+    font:400 .20rem/.36rem 'Microsoft YaHei';
+    text-align: center;
+    color: #f00;
+    width:1.13rem;
+    height:.36rem;
+    border-radius: .05rem;
+    /* box-shadow: 0 0 .06rem #d2aaeb; */
+    position: absolute;
+    top: 4%;
+    left: 50%;
+    /* background: #eee; */
+    transform: translateX(-50%);
+    display: none;
+}
+.frame{
+    position: fixed;
+    width: 6.19rem;
+    height: 5.03rem;
+    background:url(../images/tan.png) no-repeat center top;
+    -webkit-background-size: 6.19rem;
+    background-size: 6.19rem;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%,-50%);
+    z-index: 9999;
+    display: none
+}
+.frame span{
+    position: absolute;
+    width: .47rem;
+    height: .48rem;
+    background:url(../images/t_close.png) no-repeat center;
+    -webkit-background-size: .47rem;
+    background-size: .47rem;
+    left: 45%;
+    bottom: 0;
+    transform: translateX(-50%);
+    
+}
+.cover{
+    position: fixed;
+   left: 0;
+   top: 0;
+   bottom: 0;
+   bottom: 0;
+   width: 100%;
+   height: 100%;
+   background:rgba(0,0,0,0.5);
+   z-index: 9998;
+   display: none;
+}
